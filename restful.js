@@ -83,6 +83,7 @@ app.get("/api/items", (req, res) => {
 
 // GET method untuk mendapatkan data berdasarkan ID
 app.get("/api/items/:id", validateId, (req, res) => {
+  let x = 12321;
   const itemId = parseInt(req.params.id);
   const item = bsiTrainee.find((item) => item.id === itemId);
 

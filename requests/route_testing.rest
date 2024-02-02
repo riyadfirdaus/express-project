@@ -1,8 +1,0 @@
-###
-GET http://localhost:3001/hello
-
-###
-GET http://localhost:3001/things
-
-###
-GET http://localhost:3001/dynamic/riyad/123

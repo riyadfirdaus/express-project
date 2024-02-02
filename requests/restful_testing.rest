@@ -1,5 +1,38 @@
 GET http://localhost:3000/api/items/1
 
-### Get BSI Trainee List Paginate
+### Get BSI Trainee List
 GET http://localhost:3000/api/items/
 
+### Add new BSI Trainee
+POST http://localhost:3000/api/items/
+content-type: application/json
+
+{
+    "id": "72",
+    "name": "Riyad",
+    "class": "SS"
+}
+
+### Update spesific field
+PATCH http://localhost:3000/api/items/1
+content-type: application/json
+{
+    
+    "name": "Aqshol",
+    "class": "asdas"
+}
+
+### Update all field
+PATCH http://localhost:3000/api/items/1
+content-type: application/json
+{
+    
+    "name": "Aqshol",
+    "class": "asdas"
+}
+
+
+### Pagination
+GET http://localhost:3000/api/items-paginate
+    ?page=1
+    &limit=2
