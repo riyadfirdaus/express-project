@@ -3,7 +3,7 @@ const app = express();
 const newRouter = require("./routes/routes");
 
 app.use("/things", newRouter);
-app.use("/dynamic", require("./routes/dynamic"));
+app.use("/", require("./routes/dynamic"));
 
 app.get("/hello", (req, res) => {
   res.send("ini halaman hello");
