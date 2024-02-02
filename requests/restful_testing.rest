@@ -1,4 +1,5 @@
+GET http://localhost:3000/api/items/1
+
+### Get BSI Trainee List Paginate
 GET http://localhost:3000/api/items/
 
-###
-GET http://localhost:3000/api/items/
